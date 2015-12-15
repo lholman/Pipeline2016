@@ -2,6 +2,7 @@
 Run the same build and deploy process everywhere
 Debuggable builds
 Build quality in to automation code
+Automation vs Orchestration 
 
 #Brief Synopsis (c. 100 words):#
 To provide attendees with ideas and examples of making the build process a first class citizen, how this can benefit the whole product team and why we often cut corners.
@@ -17,6 +18,8 @@ To provide attendees with ideas and examples of making the build process a first
 * Build: The Commit phase of a common deployment pipeline, e.g. version, compilation, unit test and package for deployment later on.
 
 * Deploy: Everything onwards of the Commit phase, i.e. automated and manual Acceptance, UAT and Live release.
+
+* Automation vs Orchestration: I believe these are separate concerns, the area between the two is often blurred with much of the automation logic often creeping in to the orchestration process. 
 
 * Containerization: Specifics of this are out of the scope of this talk, however examples of this principle applied to containers can be found here: [TODO]() 
 
