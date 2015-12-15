@@ -22,8 +22,6 @@ To provide attendees with ideas and examples of making the build process a first
 
 * Agile: I believe in the agile manifesto and many of the Scrum/Kanban/Xanban/XP principles and applying them to ones organisation. That said, the single most important point, I believe, is an organisations culture being truly agile, actively encouraging early failure, efficiency and striving to reduce release batch sizes and time frames, this is key for enabling Continuous Delivery. 
 
-* Product Management: #NoProjects, let's think in the context of products by making our process, tooling and infrastructure first class citizens. Roadmap effectively, groom a product backlog and prioritise frequently and write valuable stories, even for seemingly "technical tasks". Build quality in. 
-
 ##Fail even earlier and debug locally##
 *Timing - 4-8 mins*
 *Purpose:*   
