@@ -60,8 +60,14 @@ To provide attendees with thoughts, ideas and proven examples of the benefits of
   * [Original maturity model from the Continuous Delivery book]() - Credit to Pearson Education, Dave Farley [@davefarley77](https://twitter.com/davefarley77) and Jez Humble [@jezhumble](https://twitter.com/jezhumble) 
   * [This talk, with commit history](https://github.com/lholman/Pipeline2016/blob/master/README.MD)
   
-###A few notes###
+###Talk notes###
 * Agile: I believe in the agile manifesto and many of the Scrum/Kanban/Xanban/XP principles and applying them to ones organisation. That said, the single most important point, I believe, is an organisations culture being truly agile, actively encouraging early failure, efficiency and striving to reduce release batch sizes and time frames, this is key for enabling Continuous Delivery. 
 
 * Continuous Delivery:  The CXX test, always be capable of deploying. Strong Continuous Integration (CI) with visible notifications and high quality output tested automatically. Deployment automation and configuration management governance. Fail ideas early, get to market before the competition and realise Return on Investment (RoI) quickly. Make code (app or infrastructure) packaged, integrated and deployable from the first committed line.
+
+* What else can this approach enable during build or deploy phase?
+	* Living documentation generation (PDF's from wiki)
+	* Reporting on build
+	* Change interrogation, feed in to deployment process?
+	
 ###Length of talk: 25 mins###
