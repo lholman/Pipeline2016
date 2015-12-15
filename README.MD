@@ -24,29 +24,37 @@ To provide attendees with ideas and examples of making the build process a first
 
 * Product Management: #NoProjects, let's think in the context of products by making our process, tooling and infrastructure first class citizens. Roadmap effectively, groom a product backlog and prioritise frequently and write valuable stories, even for seemingly "technical tasks". Build quality in. 
 
-##Section 1##
+##Fail even earlier and debug locally##
 *Timing - 4-8 mins*
 *Purpose:*   
   
-##Section 2##
+##Make the build process a first class citizen##
 *Timing - 9-17 mins*
 *Purpose:* 
 
-##Section 3##
+##Improve quality##
 *Timing - 18-22 mins*
 *Purpose:* 
 
-##Section 4##
+##Summary##
 *Timing - 23-25 mins*
 
 *Purpose:* To summarise what we have talked about, the key points to takeaway, links to resources and where we could improve.
 
 * Summary
+	* Who did that? 
+		Lloyd Holman @lloydholman
+	* What happened? 
+		I shared the perceived benefits and advantages from treating your build and automation code and processes in the same way as your product code base, i.e as a first class citizen. 
+	* Where did it take place?
+		Pipeline Conf 2016
+	* When did it take place?
+		March 2016
+	* Why did that happen?
 
 * Links to resources
   * [Original maturity model from the Continuous Delivery book]() - Credit to Pearson Education, Dave Farley [@davefarley77](https://twitter.com/davefarley77) and Jez Humble [@jezhumble](https://twitter.com/jezhumble) 
   * [This talk, with commit history](https://github.com/lholman/Pipeline2016/blob/master/README.MD)
   
-####A few notes####
-  
-####Length of talk: 25 mins####
+###A few notes###
+###Length of talk: 25 mins###
