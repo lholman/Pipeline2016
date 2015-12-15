@@ -5,13 +5,13 @@ Build quality in to automation code
 Automation vs Orchestration 
 
 #Brief Synopsis (c. 100 words):#
-To provide attendees with ideas and examples of making the build process a first class citizen, how this can benefit the whole product team and why we often cut corners.
+To provide attendees with thoughts, ideas and proven examples of the benefits of separating the automation and orchestration concerns in software delivery. More specifically how applying this approach and making the build and deploy process a first class citizen can benefit the whole product and team.
 
 #Talk Details:##
 
 ##Set the scene##
 *Timing - 0-3 mins*
-*Purpose:* Explain who I am, what this talk is about and what I mean by the terms build and deploy, i.e. a more personal synopsis
+*Purpose:* Explain who I am, what this talk is about and what I mean by the terms build and deploy, automation and orchestration, i.e. a more personal synopsis
 
 * Intro: I'm Lloyd, I'm a freelance software engineer, I believe in #DevOps principles and strive to Continuously Deliver everything (even this talk..see https://github.com/Pipeline2016/README.MD). I've worked in many sectors including manufacturing, consultancy and eCommerce, in support, operational, development and more recently (last 7+ years) in a release/build/devops/consultancy capacity. 
 
