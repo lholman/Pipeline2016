@@ -61,17 +61,24 @@ Put the build and deploy processess under version control and treat them as code
 
 ##Improve quality##
 *Timing - 13-17 mins (5 mins)*
-*Purpose:* If we treat the build and deploy process as code, then we can also test it as part of its own pipeline.
+
+####Purpose####
+If we treat the build and deploy processes as code, then we can also test it as part of its own pipeline.
 
 * Unit test coverage, version and package the build and deploy components. Dog fooding
-* Integration testing is your build and deployment throughout environments
-* File bugs, prioritise effort, innovate, refactor, include with your technical roadmap/backlog
+* Integration testing is your build and deployment through lesser environments
+* File bugs, prioritise effort, innovate, refactor, include within your technical roadmap/backlog
 
-*Benefits:* 
+####Benefits####
 * Grow your existing "helper" scripts in to quality proven code, production code if you like
+* Collaborate as you would on product code, code reviews, pull/merge requests
+ 
+####Evidence####
+* Demo TDD with Pester and PowerShell that is driving our demo build process, show workflow and feedback loop
 
 ##Decoupled##
 *Timing - 18-22 mins (5 mins)*
+
 *Purpose:* I love TeamCity, have a long running tempestuous relationship with Team Foundation Server (TFS), have had a few flings with Jenkins  and chatted up various other CI and build servers/services, including but not limited to http://www.appveyor.com/, https://travis-ci.org/ and https://appharbor.com/. The one thing they all have in common (with the notable exception of https://appharbor.com/) is they give you an inch, but allow you to take a mile. It is incredibly easy to use their out-the-box and add-on tasks, runners and plug-ins, however this means it is almost impossible to move to another CI server technology or run a build in its entirety locally.
 
 ##Summary##
