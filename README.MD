@@ -3,7 +3,7 @@
 #Brief Synopsis (c. 100 words):#
 I often find that automation is a combination of scripts, code and dependencies that are very complex, inconsistent, not versioned and rarely hosted or packaged centrally, this can all be very brittle and introduce unacceptable risk. 
 
-In this talk I introduce, by example the benefits of building quality in to the automation code we write so as to address the issues above and provide a framework for automation code. I continue by discussing the separation of automation and orchestration concerns in software build and delivery and how treating the build and deploy process as a first class citizen you can benefit products, team and the whole business.
+I will introduce, by example the benefits of building quality in to the automation code we write so as to address these issues whilst providing a framework for automation code. I will continue by discussing the separation of automation and orchestration concerns and how treating the build and deploy process as a first class citizen you can benefit product development, the team and the whole business.
 
 #Talk Details: ##
 
