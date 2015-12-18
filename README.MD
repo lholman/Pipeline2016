@@ -10,7 +10,7 @@ In this talk I introduce, by example the benefits of building quality in to the 
 ##Setting the scene ##
 *Timing: 0-2 mins (2 mins)*
 
-###Purpose ###
+####Purpose ####
 Explain who I am, what this talk is about and what I mean by the terms build and deploy, automation and orchestration
 
 * **Intro:** I'm Lloyd, I'm a freelance software engineer, I believe in #DevOps principles and strive to Continuously Deliver everything (even this talk..see https://github.com/Pipeline2016/README.MD). I've worked in many sectors including manufacturing, consultancy and eCommerce, in support, operational, development and more recently (last 7+ years) in a release/build/devops/consultancy capacity. 
@@ -20,39 +20,44 @@ Explain who I am, what this talk is about and what I mean by the terms build and
 * **Automation vs Orchestration:** I believe these are separate concerns, the area between the two is often blurred with much of the automation logic often creeping in to the orchestration process and tooling.
 * **Containerization:** Specifics of this are out of the scope of this talk, however examples of this principle applied to containers can be found here: [TODO]() 
 
-###The problem###
+####The problem####
 All too frequently I have observed that automation code and "processes" are a combination of very complex, unversioned locally saved code and dependencies. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. Rarely do they implement consistent patterns for error handling, retry, auditing or security and idempotency is often not understood.
 
-###Evidence###
+####Evidence####
 * Demonstrate ugly scripts and brittle deploy processes
 
 ##Fail even earlier and debug locally##
 *Timing - 3-7 mins (5 mins)*
 
-###Purpose ###
+####Purpose ####
 Catch more failed builds earlier on by changing fewer variables, e.g. don’t compile and build in a completely different way on your Continuous Integration (CI) server than your developers do on their development machines.
 
 * Building software is tricky, debug that locally so we don’t have to constantly break the CI builds and deployment processes to see things fail
 * Debug and execute the exact same build/deploy scripts on your **developer workstation(s)** as you execute **on your build server(s)**, reducing surprises **when you deploy**
 
-###Benefits###
+####Benefits####
 * Promotes DevOps as a practice, CI, testing, delivery and Infrastructure as Code (IaC) become things everyone cares about and has visibility of.
 
-###Evidence###
-* Demo modular build running same code on dev desktop and one of TeamCity, AppVeyor, Jenkins etc
+####Evidence####
+* Demo successful modular build running same code on dev desktop and one of TeamCity, AppVeyor, Jenkins etc.
 
 ##Make the build process a first class citizen##
 *Timing - 8-12 mins (5 mins)*
-*Purpose:* Put the build and deploy processess under version control and treat them as code, after all, we care about changes and versions of our product code… A LOT. 
+
+####Purpose####
+Put the build and deploy processess under version control and treat them as code, after all, we care about changes and versions of our product code… A LOT. 
 
 * This is a software engineering problem, we should solve it as such
 * No need to re-invent the wheel for every product/component
 * Consistency, use convention over configuration
 
-*Benefits:* 
+####Benefits####
 * Increases productivity and code re-use, easily clone (or consume) the build/deploy process in to all application components 
 * Stop using fragile UI's to hack in untracked scripts and logic
 * Reusable, modularised components rather than nests of "automation scripts" 
+
+####Evidence####
+* Demo the previous successful modular build failing for a component and the workflow to fix and publish that change
 
 ##Improve quality##
 *Timing - 13-17 mins (5 mins)*
