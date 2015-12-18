@@ -7,7 +7,7 @@ In this talk I introduce, by example the benefits of building quality in to the 
 
 #Talk Details: ##
 
-##Setting the scene ##
+##1. Setting the scene ##
 *Timing: 0-2 mins (2 mins)*
 
 ####Purpose ####
@@ -26,7 +26,7 @@ All too frequently I have observed that automation code and "processes" are a co
 ####Evidence####
 * Demonstrate ugly scripts and brittle deploy processes
 
-##Fail even earlier and debug locally##
+##2. Fail even earlier and debug locally##
 *Timing - 3-7 mins (5 mins)*
 
 ####Purpose ####
@@ -41,7 +41,7 @@ Catch more failed builds earlier on by changing fewer variables, e.g. don’t co
 ####Evidence####
 * Demo successful modular build running same code on dev desktop and one of TeamCity, AppVeyor, Jenkins etc.
 
-##Make the build process a first class citizen##
+##3. Make the build/deploy process a first class citizen##
 *Timing - 8-12 mins (5 mins)*
 
 ####Purpose####
@@ -59,7 +59,7 @@ Put the build and deploy processess under version control and treat them as code
 ####Evidence####
 * Demo the previous successful modular build failing for a component and the workflow to fix and publish that change
 
-##Improve quality##
+##4. Improve quality##
 *Timing - 13-17 mins (5 mins)*
 
 ####Purpose####
@@ -76,7 +76,7 @@ If we treat the build and deploy processes as code, then we can also test it as 
 ####Evidence####
 * Demo TDD with Pester and PowerShell that is driving our demo build process, show workflow and feedback loop
 
-##Decouple automation from orchestration##
+##5. Decouple automation from orchestration##
 *Timing - 18-22 mins (5 mins)*
 
 ####Purpose####
