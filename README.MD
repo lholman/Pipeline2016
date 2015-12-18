@@ -1,4 +1,4 @@
-#Session Title: Build quality in to automation#
+#Session Title: Building quality in to automation#
 
 #Brief Synopsis (c. 100 words):#
 I often find that automation is a combination of scripts, code and dependencies that are very complex, inconsistent, not versioned and rarely hosted or packaged centrally, this can all be very brittle and introduce unacceptable risk. 
