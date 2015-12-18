@@ -1,9 +1,4 @@
-#Session Title: One of the below#
-* Run the same build and deploy process everywhere
-* Debuggable builds
-* Build quality in to automation code
-* Automation vs Orchestration 
-* Quality pipelines
+#Session Title: Build quality in to automation#
 
 #Brief Synopsis (c. 100 words):#
 I often find that automation is a combination of scripts, code and dependencies that are very complex, inconsistent, not versioned and rarely hosted or packaged centrally, it's all very brittle and introduces risk. This is often the result of people getting things done, it's honourable, authors can be protective and it takes time to really find out what more there is under the surface. 
@@ -16,11 +11,11 @@ In this talk I introduce, by example the benefits of building quality in to the 
 *Timing - 0-2 mins (2 mins)*
 *Purpose:* Explain who I am, what this talk is about and what I mean by the terms build and deploy, automation and orchestration
 
-* Intro: I'm Lloyd, I'm a freelance software engineer, I believe in #DevOps principles and strive to Continuously Deliver everything (even this talk..see https://github.com/Pipeline2016/README.MD). I've worked in many sectors including manufacturing, consultancy and eCommerce, in support, operational, development and more recently (last 7+ years) in a release/build/devops/consultancy capacity. 
+* *Intro:* I'm Lloyd, I'm a freelance software engineer, I believe in #DevOps principles and strive to Continuously Deliver everything (even this talk..see https://github.com/Pipeline2016/README.MD). I've worked in many sectors including manufacturing, consultancy and eCommerce, in support, operational, development and more recently (last 7+ years) in a release/build/devops/consultancy capacity. 
 
-* Build: The Commit phase of a common deployment pipeline, e.g. version, compilation, unit test and package for deployment later on.
-* Deploy: Everything onwards of the Commit phase, i.e. automated and manual Acceptance, UAT and Live release.
-* Automation vs Orchestration: I believe these are separate concerns, the area between the two is often blurred with much of the automation logic often creeping in to the orchestration process and tooling.
+* *Build:* The Commit phase of a common deployment pipeline, e.g. version, compilation, unit test and package for deployment later on.
+* *Deploy:* Everything onwards of the Commit phase, i.e. automated and manual Acceptance, UAT and Live release.
+* *Automation vs Orchestration:* I believe these are separate concerns, the area between the two is often blurred with much of the automation logic often creeping in to the orchestration process and tooling.
 * Containerization: Specifics of this are out of the scope of this talk, however examples of this principle applied to containers can be found here: [TODO]() 
 
 *The problem:* All too frequently I have observed that automation scripts and "processes" are a combination of very complex, unversioned locally saved scripts. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. Rarely do they implement consistent patterns for error handling, retry, auditing or security and idempotency is often not understood.
