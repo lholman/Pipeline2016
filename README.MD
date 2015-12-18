@@ -3,9 +3,11 @@ Run the same build and deploy process everywhere
 Debuggable builds
 Build quality in to automation code
 Automation vs Orchestration 
+Quality pipelines
 
 #Brief Synopsis (c. 100 words):#
-To provide attendees with thoughts, ideas and proven examples of the benefits of separating the automation and orchestration concerns in software delivery. More specifically how applying this approach and making the build and deploy process a first class citizen can benefit the whole product and team.
+All too frequently I have observed that automation scripts and "processes" are a combination of very complex, unversioned locally saved scripts. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. Rarely are they idempotent.
+To provide attendees with thoughts, ideas and proven examples of the benefits of separating the automation and orchestration concerns in software delivery. More specifically how applying this approach of making the build and deploy process a first class citizen within your deployment pipeline can benefit the whole product and team.
 
 #Talk Details:##
 
@@ -16,35 +18,45 @@ To provide attendees with thoughts, ideas and proven examples of the benefits of
 * Intro: I'm Lloyd, I'm a freelance software engineer, I believe in #DevOps principles and strive to Continuously Deliver everything (even this talk..see https://github.com/Pipeline2016/README.MD). I've worked in many sectors including manufacturing, consultancy and eCommerce, in support, operational, development and more recently (last 7+ years) in a release/build/devops/consultancy capacity. 
 
 * Build: The Commit phase of a common deployment pipeline, e.g. version, compilation, unit test and package for deployment later on.
-
 * Deploy: Everything onwards of the Commit phase, i.e. automated and manual Acceptance, UAT and Live release.
-
 * Automation vs Orchestration: I believe these are separate concerns, the area between the two is often blurred with much of the automation logic often creeping in to the orchestration process and tooling.
-
 * Containerization: Specifics of this are out of the scope of this talk, however examples of this principle applied to containers can be found here: [TODO]() 
+
+*The problem:* All too frequently I have observed that automation scripts and "processes" are a combination of very complex, unversioned locally saved scripts. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. Rarely are they idempotent.
 
 ##Fail even earlier and debug locally##
 *Timing - 3-7 mins (5 mins)*
-*Purpose:* Catch more failed builds earlier on by changing fewer variables, i.e. don’t compile and build in a completely different way on your Continuous Integration (CI) server than your developers do on their development machines.
-* Building software is tricky, let me (or anyone) debug that locally, so we don’t have to constantly break the CI builds to see things fail.
+*Purpose:* 
 
+* Catch more failed builds earlier on by changing fewer variables, i.e. don’t compile and build in a completely different way on your Continuous Integration (CI) server than your developers do on their development machines.
+* Building software is tricky, debug that locally so we don’t have to constantly break the CI builds to see things fail.
 * Debug and execute the exact same build/deploy scripts on your.. **..developer workstation(s)** as you execute **..on your build server(s)** reducing surprises **..when you deploy**
+
+*Benefits:* Promotes DevOps as a practice, Continuous integration, testing, delivery and infrastructure as code become things everyone cares about and has visibility of.
    
 ##Make the build process a first class citizen##
 *Timing - 8-12 mins (5 mins)*
-*Purpose:* Yes, let’s put the build process under version control and treat it as code, I care about changes and versions… A  LOT. Not to mention I want an easy way to clone that build process in to as many applications and branches as I want.
+*Purpose:* Put the build and deploy processess under version control and treat them as code, after all, we care about changes and versions of our product code… A LOT. 
 
-* This is a well known and solved problem
+* This is a software engineering problem, we should solve it as such
 * No need to re-invent the wheel for every product/component
 * Consistency, use convention over configuration
 
+*Benefits:* 
+* Increases productivity and code re-use, easily clone (or consume) the build/deploy process in to all application components 
+* Stop using fragile UI's to hack in untracked scripts and logic
+* Reusable, modularised components rather than nests of "automation scripts" 
+
 ##Improve quality##
 *Timing - 13-17 mins (5 mins)*
-*Purpose:* If we treat the build process as code, then we can also test it as part of its own pipeline.
+*Purpose:* If we treat the build and deploy process as code, then we can also test it as part of its own pipeline.
 
-* Unit test coverage, version and package, dog fooding.
+* Unit test coverage, version and package the build and deploy components. Dog fooding
 * Integration testing is your build and deployment throughout environments
-* File bugs, prioritise effort, innovate, refactor
+* File bugs, prioritise effort, innovate, refactor, include with your technical roadmap/backlog
+
+*Benefits:* 
+* Grow your existing "helper" scripts in to quality proven code, production code if you like
 
 ##Decoupled##
 *Timing - 18-22 mins (5 mins)*
