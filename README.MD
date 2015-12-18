@@ -94,21 +94,16 @@ The one thing that all vendors of build and deployment tools (TeamCity, TFS, Jen
 ####Evidence####
 * Demo successful modular build running same code on dev desktop and all of TeamCity, AppVeyor, Jenkins etc.
 
-##Summary##
+##6. Summary##
 *Timing - 23-25 mins (3 mins)*
 
-*Purpose:* To summarise what we have talked about, the key points to takeaway, links to resources and where we could improve.
+####Purpose### To summarise what we have talked about, the key points to takeaway and links to resources.
 
 * Summary
-	* Who did that? 
-		Lloyd Holman @lloydholman
-	* What happened? 
-		I shared the perceived benefits and advantages of treating your build and automation code and processes in the same way as your product code base, i.e as a first class citizen. 
-	* Where did it take place?
-		Pipeline Conf 2016
-	* When did it take place?
-		March 2016
-	* Why did that happen?
+	* **Who did that?** Lloyd Holman [@lloydholman](https://twitter.com/lloydholman)
+	* **What happened?** I shared the benefits and advantages of treating your build deploy code and processes in the same way as your product code base, i.e as a first class citizen along with why we should decouple from big vendors and treat automation and orchestration as separate concerns. 
+	* **Where and When did it take place?** Pipeline Conf, March 2016
+	* **Why did that happen?** This is a topic close to my heart, I believe it allows us an an IT industry to live and breath the DevOps mentality and ultimately add value by producing high quality build and deploy processes that can themselves be built upon and delivered in small batches to benefit product development for the business 
 
 * Links to resources
   * [Original maturity model from the Continuous Delivery book]() - Credit to Pearson Education, Dave Farley [@davefarley77](https://twitter.com/davefarley77) and Jez Humble [@jezhumble](https://twitter.com/jezhumble) 
