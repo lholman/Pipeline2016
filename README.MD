@@ -45,7 +45,7 @@ Catch more failed builds earlier on by changing fewer variables, e.g. don’t co
 *Timing - 8-12 mins (5 mins)*
 
 ####Purpose####
-Put the build and deploy processess under version control and treat them as code, after all, we care about changes and versions of our product code… A LOT. 
+Put the build and deploy processes under version control and treat them as code, after all, we care about changes and versions of our product code… A LOT. 
 
 * This is a software engineering problem, we should solve it as such
 * No need to re-invent the wheel for every product/component
@@ -92,7 +92,7 @@ The one thing that all vendors of build and deployment tools (TeamCity, TFS, Jen
 * Tooling choices can be made more easily and with far less risk
 
 ####Evidence####
-* Demo successful modular build running same code on dev desktop and all of TeamCity, AppVeyor, Jenkins etc.
+* Demo successful modular build running same code on developer/tester desktop and all of TeamCity, AppVeyor, Jenkins etc.
 
 ##6. Summary##
 *Timing - 23-25 mins (3 mins)*
@@ -103,14 +103,14 @@ The one thing that all vendors of build and deployment tools (TeamCity, TFS, Jen
 	* **Who did that?** Lloyd Holman [@lloydholman](https://twitter.com/lloydholman)
 	* **What happened?** I shared the benefits and advantages of treating your build deploy code and processes in the same way as your product code base, i.e as a first class citizen along with why we should decouple from big vendors and treat automation and orchestration as separate concerns. 
 	* **Where and When did it take place?** Pipeline Conf, March 2016
-	* **Why did that happen?** This is a topic close to my heart, I believe it allows us an an IT industry to live and breath the DevOps mentality and ultimately add value by producing high quality build and deploy processes that can themselves be built upon and delivered in small batches to benefit product development for the business 
+	* **Why did that happen?** This is a topic close to my heart, I believe it allows us as an IT industry to live and breathe the DevOps mentality and ultimately add value by producing high quality build and deploy processes that can themselves be built upon and delivered in small batches to benefit product development for the business 
 
 * Links to resources
   * [Original maturity model from the Continuous Delivery book]() - Credit to Pearson Education, Dave Farley [@davefarley77](https://twitter.com/davefarley77) and Jez Humble [@jezhumble](https://twitter.com/jezhumble) 
   * [This talk, with commit history](https://github.com/lholman/Pipeline2016/blob/master/README.MD)
   
 ###Talk notes###
-* Agile: I believe in the agile manifesto and many of the Scrum/Kanban/Xanban/XP principles and applying them to ones organisation. That said, the single most important point, I believe, is an organisations culture being truly agile, actively encouraging early failure, efficiency and striving to reduce release batch sizes and time frames, this is key for enabling Continuous Delivery. 
+* Agile: I believe in the agile manifesto and many of the Scrum/Kanban/Xanban/XP principles and applying them to one's organisation. That said, the single most important point, I believe, is an organisations culture being truly agile, actively encouraging early failure, efficiency and striving to reduce release batch sizes and time frames, this is key for enabling Continuous Delivery. 
 
 * Continuous Delivery:  The CXX test, always be capable of deploying. Strong Continuous Integration (CI) with visible notifications and high quality output tested automatically. Deployment automation and configuration management governance. Fail ideas early, get to market before the competition and realise Return on Investment (RoI) quickly. Make code (app or infrastructure) packaged, integrated and deployable from the first committed line.
 
