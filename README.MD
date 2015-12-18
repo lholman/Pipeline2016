@@ -76,10 +76,23 @@ If we treat the build and deploy processes as code, then we can also test it as 
 ####Evidence####
 * Demo TDD with Pester and PowerShell that is driving our demo build process, show workflow and feedback loop
 
-##Decoupled##
+##Decouple automation from orchestration##
 *Timing - 18-22 mins (5 mins)*
 
-*Purpose:* I love TeamCity, have a long running tempestuous relationship with Team Foundation Server (TFS), have had a few flings with Jenkins  and chatted up various other CI and build servers/services, including but not limited to http://www.appveyor.com/, https://travis-ci.org/ and https://appharbor.com/. The one thing they all have in common (with the notable exception of https://appharbor.com/) is they give you an inch, but allow you to take a mile. It is incredibly easy to use their out-the-box and add-on tasks, runners and plug-ins, however this means it is almost impossible to move to another CI server technology or run a build in its entirety locally.
+####Purpose####
+The one thing that all vendors of build and deployment tools (TeamCity, TFS, Jenkins, AppVeyor, TravisCI, OctopusDeploy etc) have in common is they give you an inch, but allow you to take a mile. It is incredibly easy to use their out-the-box and add-on tasks, runners and plug-ins, however this means it is almost impossible to move to another technology or run a build in its entirety locally. Vendor lock-in is a very real result. 
+
+* Decouple your build/deploy logic from the vendor of your CI and orchestration tooling
+* Continue to use vendor supported tooling for orchestration
+* Own your build/deploy logic (plus all benefits above)
+* Run the same process everywhere
+
+####Benefits####
+* Decoupling benefits are understood well in software engineering, the same is true with orchestration, the landscape changes frequently and we should be able to adapt quickly and easily
+* Tooling choices can be made more easily and with far less risk
+
+####Evidence####
+* Demo successful modular build running same code on dev desktop and all of TeamCity, AppVeyor, Jenkins etc.
 
 ##Summary##
 *Timing - 23-25 mins (3 mins)*
