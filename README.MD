@@ -1,7 +1,7 @@
 #Session Title: Build quality in to automation#
 
 #Brief Synopsis (c. 100 words):#
-I often find that automation is a combination of scripts, code and dependencies that are very complex, inconsistent, not versioned and rarely hosted or packaged centrally, it's all very brittle and introduces risk. This is often the result of people getting things done, it's honourable, authors can be protective and it takes time to really find out what more there is under the surface. 
+I often find that automation is a combination of scripts, code and dependencies that are very complex, inconsistent, not versioned and rarely hosted or packaged centrally, this can all be very brittle and introduce unacceptable risk. 
 
 In this talk I introduce, by example the benefits of building quality in to the automation code we write so as to address the issues above and provide a framework for automation code. I continue by discussing the separation of automation and orchestration concerns in software build and delivery and how treating the build and deploy process as a first class citizen you can benefit products, team and the whole business.
 
