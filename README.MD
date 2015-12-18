@@ -1,20 +1,20 @@
 #Session Title: One of the below#
-Run the same build and deploy process everywhere
-Debuggable builds
-Build quality in to automation code
-Automation vs Orchestration 
-Quality pipelines
+* Run the same build and deploy process everywhere
+* Debuggable builds
+* Build quality in to automation code
+* Automation vs Orchestration 
+* Quality pipelines
 
 #Brief Synopsis (c. 100 words):#
-I often find that automation is a combination of scripts, code and dependencies that are very complex, inconsistent, not versioned and rarely hosted or packaged centrally, it is all very brittle and introduces risk. This is the result of people getting things done, it's honourable, authors can be protective and it takes time to really find out what more there is under the surface. 
-In this talk I introduce, by example the benefits of building quality in to the automation code we write so as to address the issues above and much more, I continue by discussing the separation of automation and orchestration concerns in software build and delivery and how treating the process as a first class software citizen you can benefit the product, team and whole business.
+I often find that automation is a combination of scripts, code and dependencies that are very complex, inconsistent, not versioned and rarely hosted or packaged centrally, it's all very brittle and introduces risk. This is often the result of people getting things done, it's honourable, authors can be protective and it takes time to really find out what more there is under the surface. 
+In this talk I introduce, by example the benefits of building quality in to the automation code we write so as to address the issues above and much more, I continue by discussing the separation of automation and orchestration concerns in software build and delivery and how treating the build and deploy process as a first class citizen you can benefit products, team and the whole business.
 
 
 #Talk Details:##
 
 ##Set the scene##
 *Timing - 0-2 mins (2 mins)*
-*Purpose:* Explain who I am, what this talk is about and what I mean by the terms build and deploy, automation and orchestration, i.e. a more personal synopsis
+*Purpose:* Explain who I am, what this talk is about and what I mean by the terms build and deploy, automation and orchestration
 
 * Intro: I'm Lloyd, I'm a freelance software engineer, I believe in #DevOps principles and strive to Continuously Deliver everything (even this talk..see https://github.com/Pipeline2016/README.MD). I've worked in many sectors including manufacturing, consultancy and eCommerce, in support, operational, development and more recently (last 7+ years) in a release/build/devops/consultancy capacity. 
 
@@ -23,17 +23,18 @@ In this talk I introduce, by example the benefits of building quality in to the 
 * Automation vs Orchestration: I believe these are separate concerns, the area between the two is often blurred with much of the automation logic often creeping in to the orchestration process and tooling.
 * Containerization: Specifics of this are out of the scope of this talk, however examples of this principle applied to containers can be found here: [TODO]() 
 
-*The problem:* All too frequently I have observed that automation scripts and "processes" are a combination of very complex, unversioned locally saved scripts. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. Rarely are they idempotent.
+*The problem:* All too frequently I have observed that automation scripts and "processes" are a combination of very complex, unversioned locally saved scripts. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. Rarely do they implement consistent patterns for error handling, retry, auditing or security and idempotency is often not understood.
+
+*Evidence:* Demonstrate ugly scripts and build processes
 
 ##Fail even earlier and debug locally##
 *Timing - 3-7 mins (5 mins)*
-*Purpose:* 
+*Purpose:* Catch more failed builds earlier on by changing fewer variables, e.g. don’t compile and build in a completely different way on your Continuous Integration (CI) server than your developers do on their development machines.
 
-* Catch more failed builds earlier on by changing fewer variables, i.e. don’t compile and build in a completely different way on your Continuous Integration (CI) server than your developers do on their development machines.
-* Building software is tricky, debug that locally so we don’t have to constantly break the CI builds to see things fail.
+* Building software is tricky, debug that locally so we don’t have to constantly break the CI builds and deployment processes to see things fail
 * Debug and execute the exact same build/deploy scripts on your.. **..developer workstation(s)** as you execute **..on your build server(s)** reducing surprises **..when you deploy**
 
-*Benefits:* Promotes DevOps as a practice, Continuous integration, testing, delivery and infrastructure as code become things everyone cares about and has visibility of.
+*Benefits:* Promotes DevOps as a practice, CI, testing, delivery and Infrastructure as Code (IaC) become things everyone cares about and has visibility of.
    
 ##Make the build process a first class citizen##
 *Timing - 8-12 mins (5 mins)*
