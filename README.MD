@@ -6,8 +6,9 @@ Automation vs Orchestration
 Quality pipelines
 
 #Brief Synopsis (c. 100 words):#
-All too frequently I have observed that automation scripts and "processes" are a combination of very complex, unversioned locally saved scripts. Delving deeper these important scripts are often rats nests of 100's or even 1000's of lines of logic, they're brittle, one change can break them or even worse give a non-deterministic output. Rarely are they idempotent.
-To provide attendees with thoughts, ideas and proven examples of the benefits of separating the automation and orchestration concerns in software delivery. More specifically how applying this approach of making the build and deploy process a first class citizen within your deployment pipeline can benefit the whole product and team.
+I often find that automation is a combination of scripts, code and dependencies that are very complex, inconsistent, not versioned and rarely hosted or packaged centrally, it is all very brittle and introduces risk. This is the result of people getting things done, it's honourable, authors can be protective and it takes time to really find out what more there is under the surface. 
+In this talk I introduce, by example the benefits of building quality in to the automation code we write so as to address the issues above and much more, I continue by discussing the separation of automation and orchestration concerns in software build and delivery and how treating the process as a first class software citizen you can benefit the product, team and whole business.
+
 
 #Talk Details:##
 
