@@ -10,7 +10,7 @@ To provide attendees with thoughts, ideas and proven examples of the benefits of
 #Talk Details:##
 
 ##Set the scene##
-*Timing - 0-3 mins*
+*Timing - 0-2 mins (2 mins)*
 *Purpose:* Explain who I am, what this talk is about and what I mean by the terms build and deploy, automation and orchestration, i.e. a more personal synopsis
 
 * Intro: I'm Lloyd, I'm a freelance software engineer, I believe in #DevOps principles and strive to Continuously Deliver everything (even this talk..see https://github.com/Pipeline2016/README.MD). I've worked in many sectors including manufacturing, consultancy and eCommerce, in support, operational, development and more recently (last 7+ years) in a release/build/devops/consultancy capacity. 
@@ -19,29 +19,39 @@ To provide attendees with thoughts, ideas and proven examples of the benefits of
 
 * Deploy: Everything onwards of the Commit phase, i.e. automated and manual Acceptance, UAT and Live release.
 
-* Automation vs Orchestration: I believe these are separate concerns, the area between the two is often blurred with much of the automation logic often creeping in to the orchestration process. 
+* Automation vs Orchestration: I believe these are separate concerns, the area between the two is often blurred with much of the automation logic often creeping in to the orchestration process and tooling.
 
 * Containerization: Specifics of this are out of the scope of this talk, however examples of this principle applied to containers can be found here: [TODO]() 
 
-
-
 ##Fail even earlier and debug locally##
-*Timing - 4-8 mins*
-*Purpose:* 
+*Timing - 3-7 mins (5 mins)*
+*Purpose:* Catch more failed builds earlier on by changing fewer variables, i.e. don’t compile and build in a completely different way on your Continuous Integration (CI) server than your developers do on their development machines.
+* Building software is tricky, let me (or anyone) debug that locally, so we don’t have to constantly break the CI builds to see things fail.
+
+* Debug and execute the exact same build/deploy scripts on your.. **..developer workstation(s)** as you execute **..on your build server(s)** reducing surprises **..when you deploy**
    
 ##Make the build process a first class citizen##
-*Timing - 9-17 mins*
-*Purpose:* Put the build process under version control and treat it as code, I care about changes and versions… A  LOT
+*Timing - 8-12 mins (5 mins)*
+*Purpose:* Yes, let’s put the build process under version control and treat it as code, I care about changes and versions… A  LOT. Not to mention I want an easy way to clone that build process in to as many applications and branches as I want.
+
 * This is a well known and solved problem
 * No need to re-invent the wheel for every product/component
 * Consistency, use convention over configuration
 
 ##Improve quality##
-*Timing - 18-22 mins*
-*Purpose:* 
+*Timing - 13-17 mins (5 mins)*
+*Purpose:* If we treat the build process as code, then we can also test it as part of its own pipeline.
+
+* Unit test coverage, version and package, dog fooding.
+* Integration testing is your build and deployment throughout environments
+* File bugs, prioritise effort, innovate, refactor
+
+##Decoupled##
+*Timing - 18-22 mins (5 mins)*
+*Purpose:* I love TeamCity, have a long running tempestuous relationship with Team Foundation Server (TFS), have had a few flings with Jenkins  and chatted up various other CI and build servers/services, including but not limited to http://www.appveyor.com/, https://travis-ci.org/ and https://appharbor.com/. The one thing they all have in common (with the notable exception of https://appharbor.com/) is they give you an inch, but allow you to take a mile. It is incredibly easy to use their out-the-box and add-on tasks, runners and plug-ins, however this means it is almost impossible to move to another CI server technology or run a build in its entirety locally.
 
 ##Summary##
-*Timing - 23-25 mins*
+*Timing - 23-25 mins (3 mins)*
 
 *Purpose:* To summarise what we have talked about, the key points to takeaway, links to resources and where we could improve.
 
@@ -49,7 +59,7 @@ To provide attendees with thoughts, ideas and proven examples of the benefits of
 	* Who did that? 
 		Lloyd Holman @lloydholman
 	* What happened? 
-		I shared the perceived benefits and advantages from treating your build and automation code and processes in the same way as your product code base, i.e as a first class citizen. 
+		I shared the perceived benefits and advantages of treating your build and automation code and processes in the same way as your product code base, i.e as a first class citizen. 
 	* Where did it take place?
 		Pipeline Conf 2016
 	* When did it take place?
